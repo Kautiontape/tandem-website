@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tandem Alarm &mdash; Privacy Policy</title>
+  <meta name="description" content="Privacy policy for Tandem Alarm, an alarm clock that pairs two phones.">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+    :root {
+      --accent: #43D69A;
+      --accent-2: #B48CFF;
+      --bg: #1F2452;
+      --bg-card: #282E63;
+      --border: #3D4585;
+      --text: #FFF3E6;
+      --text-dim: #A9AFDB;
+      --text-mid: #CBD0EC;
+      --mono: 'JetBrains Mono', monospace;
+      --sans: 'DM Sans', sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 256px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .page {
+      position: relative;
+      z-index: 1;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    .back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      text-decoration: none;
+      margin-bottom: 2rem;
+      transition: color 0.2s;
+    }
+    .back:hover { color: var(--accent); }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .brand-stripe {
+      width: 4px;
+      height: 2rem;
+      background: repeating-linear-gradient(-45deg, var(--accent), var(--accent) 3px, var(--bg) 3px, var(--bg) 6px);
+      border-radius: 2px;
+    }
+
+    h1 {
+      font-family: var(--mono);
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    h1 span { color: var(--accent); }
+
+    .updated {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      color: var(--text-dim);
+      padding-left: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .intro {
+      font-size: 0.9rem;
+      color: var(--text-mid);
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-family: var(--mono);
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text);
+      margin: 2rem 0 0.85rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    p { font-size: 0.86rem; color: var(--text-mid); line-height: 1.7; margin-bottom: 0.85rem; }
+
+    ul { list-style: none; display: flex; flex-direction: column; gap: 0.85rem; margin-bottom: 0.85rem; }
+
+    li {
+      font-size: 0.86rem;
+      color: var(--text-mid);
+      line-height: 1.7;
+      padding-left: 1rem;
+      position: relative;
+    }
+    li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.6rem;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--accent);
+      opacity: 0.7;
+    }
+    li strong { color: var(--text); font-weight: 600; }
+
+    a.link { color: var(--accent); text-decoration: none; }
+    a.link:hover { text-decoration: underline; }
+
+    h2:target { color: var(--accent); }
+
+    .contact {
+      margin-top: 2rem;
+      padding: 1.25rem 1.5rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-family: var(--mono);
+      font-size: 0.82rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+    }
+    footer p { font-family: var(--mono); font-size: 0.7rem; color: var(--text-dim); }
+
+    @media (max-width: 580px) {
+      .page { padding: 2rem 1rem 3rem; }
+      h1 { font-size: 1.15rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <a href="../" class="back">&larr; back to Tandem Alarm</a>
+
+    <div class="brand">
+      <div class="brand-stripe"></div>
+      <h1><span>Tandem Alarm</span> &mdash; Privacy Policy</h1>
+    </div>
+    <p class="updated">Effective date: November 2, 2026</p>
+
+<p class="intro">Tandem Alarm is an alarm clock for two people, one phone each. Each phone keeps its own alarms and rings them itself. Once you pair two phones, each can see the other&rsquo;s alarms and skip, turn off or stop them. This policy describes the data the app handles.</p>
+<h2>What stays on your phone</h2>
+<p>Your alarms, settings and sounds live on your phone. If you never pair, nothing about them is sent anywhere. Nothing else is sent until you show a pairing code or enter one. The three items under &ldquo;On every start&rdquo; in the next section are sent regardless.</p>
+<h2>What leaves your phone, and why</h2>
+<p><strong>On every start, paired or not:</strong></p>
+<ul>
+<li><strong>Anonymous account ID.</strong> The app signs you in anonymously with Firebase Authentication. This random ID is how the app tells the two phones apart. It is not connected to your name, email or any real-world identity, and the app never shows it.</li>
+<li><strong>Push token.</strong> The app asks Firebase Cloud Messaging for a token, a random ID for this install, so the paired phone&rsquo;s commands can reach you while the app is closed.</li>
+<li><strong>Firebase installation ID.</strong> Firebase Cloud Messaging uses Firebase Installations, which creates a random ID for this install.</li>
+</ul>
+<p><strong>Only once you show a pairing code or pair</strong> (pairing is optional):</p>
+<ul>
+<li><strong>Pairing records.</strong> Showing a pairing code creates a household record (the member IDs and a creation time), a user record that holds the household ID, and the code itself, which can be used for 10 minutes and holds the household ID, your ID and its expiry time. Joining the other person&rsquo;s code adds you to their household.</li>
+<li><strong>Display name.</strong> The name set in Settings. If none is set, it is the phone&rsquo;s model name. The paired phone shows it.</li>
+<li><strong>Alarms.</strong> For each of your alarms: label, time, days, on or off, next ring time, skips, the answer to a late-ring question, vibration and sound settings, text position and wallpaper framing. For an alarm you join from the other phone, a link record holds the owner&rsquo;s alarm ID, ring or notify mode, and the time and days copied from it. The paired phone shows them. It cannot change your alarm times.</li>
+<li><strong>Ring state.</strong> While an alarm rings or is snoozed: which alarm, when it started and when the snooze ends, so the other phone can follow a joined alarm.</li>
+<li><strong>Commands.</strong> Skip, undo skip, turn off, turn on, stop ringing, snooze and invite. Each holds the sender and target IDs, the alarm, the ring time, and a status. The target phone also gets the command as a push notification.</li>
+<li><strong>Photos.</strong> The wallpaper of an alarm that is joined or has an open invite, and your default wallpaper. The paired phone shows it when the joined alarm rings.</li>
+<li><strong>Sounds.</strong> The sound of an alarm that is joined or has an open invite, with its title. The paired phone plays it.</li>
+</ul>
+<p>Photos are re-encoded as a screen-sized JPEG before upload, which removes location and other metadata. Sounds are sent as the original file, so any tags inside the file go with it.</p>
+<p>Each change to an alarm or ring state overwrites the last. The app keeps no history of them. Commands expire after 24 hours, which means the app ignores them. They are not deleted until you unpair.</p>
+<h2>Who can see it</h2>
+<ul>
+<li><strong>The paired phone.</strong> Everything in the list above that starts at pairing. Nobody else using the app can see it.</li>
+<li><strong>Google Firebase.</strong> The app stores and delivers this data with Firebase (Cloud Firestore, Cloud Storage, Cloud Functions, Cloud Messaging, Authentication), as a service provider. Data is encrypted in transit with HTTPS.</li>
+</ul>
+<h2>What Firebase itself collects</h2>
+<p>Firebase collects some technical data when the app talks to it: your IP address, the app&rsquo;s user agent, and the app ID. Firebase uses it for its own security and to prevent abuse. The app does not use it, and nothing derives a location from the IP address. See <a class="link" href="https://firebase.google.com/docs/android/play-data-disclosure">Firebase&rsquo;s description</a>.</p>
+<p>Firebase also keeps server logs of the app&rsquo;s backend functions. These hold anonymous and household IDs, and Google Cloud keeps them for up to 30 days.</p>
+<h2>What the app does NOT do</h2>
+<ul>
+<li>No ads.</li>
+<li>No analytics and no crash reporting.</li>
+<li>No selling of data, and no sharing with anyone beyond Firebase, which hosts it, and the paired phone.</li>
+<li>No location and no contacts.</li>
+</ul>
+<h2 id="deleting-your-data">Deleting your data</h2>
+<p><strong>Unpair, in the app.</strong> On either phone, Unpair deletes this from the server for both people:</p>
+<ul>
+<li>the household and both people&rsquo;s user records,</li>
+<li>both phones&rsquo; device records, which hold the display names, alarms, ring state and the push-token copies,</li>
+<li>every command, and</li>
+<li>every shared photo and sound.</li>
+</ul>
+<p>Normally all of it is gone. If the server hits an error during cleanup, some of it can stay behind. Email me (below) and I will delete it.</p>
+<p><strong>What stays after Unpair:</strong></p>
+<ul>
+<li>Each phone&rsquo;s anonymous sign-in record in Firebase Authentication. It holds a random ID, no name, and the app never deletes it.</li>
+<li>Pairing codes that were never used. The app does not delete them, and they do not expire out of the database, except that joining another phone&rsquo;s code deletes the codes you showed. A code holds the household ID, the creator&rsquo;s ID and an expiry time.</li>
+<li>Firebase&rsquo;s own registrations: the push token and the installation ID. The app does not delete them.</li>
+<li>Server logs, for up to 30 days.</li>
+<li>Records from a pairing code that was shown but never used. Showing a code creates a one-member household record (your member ID and a creation time) and a user record (the household ID only). Until two phones are paired the app offers no Unpair, so these stay. If you later join the other person&rsquo;s code, they are deleted.</li>
+</ul>
+<p><strong>Uninstalling the app without unpairing deletes nothing on the server.</strong> Unpair first.</p>
+<p><strong>To have anything that is left deleted,</strong> email <a class="link" href="mailto:kautiontape@gmail.com">kautiontape@gmail.com</a>. Tell me what you want removed, and, if you can, the display name or pairing details that identify it. The anonymous ID is not shown in the app, so I may not be able to find a record without them.</p>
+<h2>Children</h2>
+<p>Tandem Alarm is a general-purpose alarm clock and is not directed at children under 13. The app asks for no age and collects nothing beyond the data described here. If you believe a child has used it with data you want removed, email the address below.</p>
+<h2>Changes to this policy</h2>
+<p>If the app starts handling data differently, this page changes first and the effective date at the top is updated.</p>
+<h2>Contact</h2>
+<div class="contact">
+      Kautiontape &mdash; <a class="link" href="mailto:kautiontape@gmail.com">kautiontape@gmail.com</a>
+    </div>
+
+    <footer>
+      <p>kautiontape.com &middot; tandem.kautiontape.com</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+name: Deploy to ktn
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  deploy:
+    runs-on: [self-hosted, ktn]
+    steps:
+      # Static site, no build step. The host nginx serves the checkout directly and terminates TLS.
+      - name: Deploy
+        run: git -C /opt/services/tandem pull --ff-only origin main
